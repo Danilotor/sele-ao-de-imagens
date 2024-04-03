@@ -1,0 +1,136 @@
+body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:azure;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s ease-out;
+
+}
+
+
+
+
+img {
+    background-size: cover;
+    
+}
+
+.imagem {
+       width: 100vw;
+       height: 100%;
+    transition: 0.5s ease-out;
+    position: relative;
+    display: flex;
+    display: none;
+    background-size: cover;
+}
+
+.imagem.selecionada {
+    display: block;
+    transition: 0.5s ease-out;
+}
+
+.descricao {
+
+    background-color: aliceblue;
+    position: absolute;
+    width: 620px;
+    height: 700px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    top: 180px;
+
+    left: 180px;
+    bottom: 180px;
+
+}
+
+.descricao>h2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+.descricao>p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px;
+    
+    display: flex;
+    word-wrap: break-word;
+    justify-content: center;
+    padding: 50px;
+}
+
+a {
+
+    display: flex;
+
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    justify-content: left;
+    position: absolute;
+    bottom: 0;
+    margin: 50px;
+}
+
+
+.botoes{
+    cursor: pointer;
+   transition: 0.3s;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    background: rgba(0, 0, 0, 0.0) ;
+}
+
+.botoes:hover{
+    transform: scale(1.2);
+}
+
+
+.esquerdo{
+   position: absolute;
+    left: 4%;
+   top: 50%;
+   
+}
+.direito{
+position: absolute;
+    right: 4%;
+   margin-left: 50px;
+   top: 50% 
+
+}
+
+.opaco{
+    opacity: 0.6;
+    pointer-events: none;
+}
